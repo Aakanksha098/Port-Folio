@@ -1,0 +1,234 @@
+:root{
+--neutral:#232946;
+--base-100: #fffffe;
+--neutral-focus:#121629;
+--accent:#d4d8f0;
+--secondary:#b0c1ec;
+--primary:#eebbc3;
+}
+*{
+    margin:0; 
+    scroll-behavior: smooth;  
+}
+body{
+    font-family: "Noto-serif" , sans-serif;
+    font-size: serif;
+    background-color: var(--neutral);
+    text-align: center;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family:"Poppins", sans-serif;
+}
+#navbar{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: var(--neutral);
+    padding:20px 0;
+    font-size: 30px;
+    border-bottom: 2px solid var(--neutral-focus);
+}
+#navbar a{
+ color:var(--base-100);
+  display: flex;
+  padding:0 10px;
+  font-family: serif;
+  text-decoration: none;
+}
+#nav-bar a:hover{
+    text-decoration: underline;
+}
+section{
+    min-height: 100vh;
+    padding: 80px 0;
+    background-color: var(--neutral);
+    display: flex;
+    flex-direction: column;
+}
+#About h1{
+    font-size: 60px;
+    color: var(--base-100);
+    margin-top: 30vh;
+    width: 100%;
+}
+#About p{
+    color:var(--primary);
+    margin:25px 0;
+    font-size: 25px;
+    font-style: italic;
+    width: 100%;
+    
+}
+img{
+    width: 100%;
+    height: 250px;
+}
+.container{
+    max-width: 1100px;
+    padding: 0 1.5rem;
+    margin:auto;
+    overflow: hidden;
+}
+#work{
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    padding: 4rem .1rem;
+    background-color:var(--neutral);
+   
+    
+}
+#work .projects{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:1rem; 
+   
+}
+#work .container>h1{
+    font-size: 60px;
+    color: var(--base-100);
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+#work .bottom-line{
+    height: 6px;
+    background-color: #fff;
+    width: 55%;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+.box{
+    background-color: var(--neutral-focus);
+    border: 3px solid rgb(46, 45, 45);
+    border-radius: 10px;
+    margin:10px;
+    box-shadow: 0px 0px 0px 4px rgba(198, 196, 196, 0.2);
+}
+.box:hover{
+    transition: all 0.2s ease-in-out;
+}
+.box a{
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+.code{
+    display: none;
+}
+.box:hover .code{
+    display: contents;
+    color:var(--primary);
+}
+.show-all{
+    text-decoration: none;
+    width: max-content;
+    display: flex;
+    margin:auto;
+    margin-top: 50px;
+    text-align: center;
+    padding: .6rem 1.5rem;
+    background-color: rgb(219, 98, 155);
+    color:var(--base-100);
+    font-size: 25px;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+}
+.show-all:hover{
+    background-color:red;
+    color:var(--base-100);
+}
+p{
+    color:var(--base-100);
+    font-style: italic;
+    font-size: 25px;
+}
+.social-media{
+    padding: 0 30px;
+    color:var(--base-100);
+    font-family:"Poppins", sans-serif;
+    font-size: 30px;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+    text-decoration: none;
+  }
+.social-media:hover {
+    transform: translateY(8px);
+    text-decoration: underline;
+  }
+  footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+   
+  }
+  
+  footer  p {
+    margin: 2rem;
+  }
+  
+  footer i {
+    vertical-align: middle;
+  }
+  #Contact{
+    width: 100%;
+    color:var(--base-100);
+  }
+  #Contact h1{
+    margin-top: 220px;
+  }
+  .social{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 100px;
+  }
+  #Contact h1{
+    font-size: 50px;
+  }
+ @media (max-width:800px){
+    #About{
+        justify-content: center;
+        margin-left: 30px;
+        font-size: 40px;
+        margin-top: 20px;
+    }
+    #About p{
+        max-width: 100%;
+        margin-left: 60px;
+    }
+
+#work .container>h1{
+    font-size:40px ;
+ }
+ #work .projects{
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+    
+ }
+ #work{
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+ }
+ .creator{
+    max-width: 100%;
+    justify-content: center;
+ }
+ #contact{
+    max-width: 100%;
+ }
+
+
+}
+ 
+  
+  
